@@ -23,7 +23,7 @@ jobs:
           include-prerelease: true
 
       - name: Build with dotnet
-        run: dotnet build ..\BillingApplication\\BillingApplication.csproj --configuration Release
+        run: dotnet build ..\BillingApplication\BillingApplication.csproj --configuration Release
 
       - name: dotnet publish
         run: dotnet publish ..\BillingApplication\BillingApplication.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
